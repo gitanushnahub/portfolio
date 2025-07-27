@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushna Immadisetty - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            color: #333;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom button styling */
+        .btn-primary {
+            @apply inline-block px-6 py-3 rounded-full text-white font-semibold shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105;
+            background: linear-gradient(45deg, #6366f1, #8b5cf6); /* Purple gradient */
+        }
+        .btn-secondary {
+            @apply inline-block px-6 py-3 rounded-full text-gray-800 font-semibold border border-gray-300 shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105;
+            background-color: #ffffff;
+        }
+        .section-title {
+            @apply text-4xl font-bold text-center mb-12 text-gray-800 relative;
+        }
+        .section-title::after {
+            content: '';
+            @apply block w-20 h-1 bg-indigo-500 mx-auto mt-4 rounded-full;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md py-4 fixed w-full z-10 top-0">
+        <div class="container flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600">Immadisetty Anushna</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-700 hover:text-indigo-600 transition duration-300">About</a>
+                <a href="#skills" class="text-gray-700 hover:text-indigo-600 transition duration-300">Skills</a>
+                <a href="#projects" class="text-gray-700 hover:text-indigo-600 transition duration-300">Projects</a>
+                <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition duration-300">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-indigo-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 shadow-lg">
+            <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">About</a>
+            <a href="#skills" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Skills</a>
+            <a href="#projects" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Projects</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-32 text-center mt-16 rounded-b-3xl shadow-xl">
+        <div class="container">
+            <img src="https://placehold.co/150x150/6366f1/ffffff?text=AI" alt="Anushna Immadisetty" class="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-white shadow-lg">
+            <h1 class="text-5xl font-extrabold mb-4 animate-fade-in-down">Hi, I'm Immadisetty Anushna</h1>
+            <p class="text-xl mb-8 opacity-90 animate-fade-in-up">An aspiring Software Development Engineer with a strong foundation in AI & Data Science, driven to build impactful and scalable tech solutions.</p>
+            <div class="space-x-4">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-secondary text-indigo-700">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white rounded-lg shadow-lg mx-4 md:mx-auto mt-12 mb-12">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-10">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://placehold.co/500x300/e0e7ff/4338ca?text=About+Me" alt="About Me Image" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div class="md:w-1/2 text-lg text-gray-700">
+                    <p class="mb-4">
+                        I am Anushna Immadisetty, a dedicated B.Tech student specializing in Artificial Intelligence and Data Science at Shiv Nadar University, Chennai. With a strong academic record (CGPA: 8.5), I am passionate about leveraging technology to solve real-world problems.
+                    </p>
+                    <p class="mb-4">
+                        My journey in tech is driven by a curiosity for data, algorithms, and building intelligent systems. I have hands-on experience in various programming languages and frameworks, constantly seeking to expand my knowledge and apply it to impactful projects.
+                    </p>
+                    <p>
+                        Beyond academics, I am a core member of the NSO Team at SNUC and have actively participated in events like Smart India Hackathon (SIH) 2024, demonstrating my commitment to collaborative problem-solving and innovation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50 rounded-lg shadow-lg mx-4 md:mx-auto mt-12 mb-12">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Programming Languages -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-4 text-indigo-700"><i class="fas fa-code mr-2"></i>Programming Languages</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>C</li>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <!-- Frameworks & Libraries -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-4 text-indigo-700"><i class="fas fa-puzzle-piece mr-2"></i>Frameworks & Libraries</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>TensorFlow</li>
+                        <li>PyTorch</li>
+                        <li>Keras</li>
+                        <li>NumPy</li>
+                        <li>Pandas</li>
+                        <li>Matplotlib</li>
+                        <li>Seaborn</li>
+                        <li>Scikit-learn</li>
+                    </ul>
+                </div>
+                <!-- Core Skills -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-4 text-indigo-700"><i class="fas fa-cogs mr-2"></i>Core Skills</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Data Structures and Algorithms (DSA)</li>
+                        <li>Object-Oriented Programming (OOP)</li>
+                        <li>Database Management Systems (DBMS)</li>
+                        <li>Problem Solving</li>
+                        <li>Competitive Programming</li>
+                        <li>Operating Systems (OS)</li>
+                    </ul>
+                </div>
+                <!-- Tools -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-4 text-indigo-700"><i class="fas fa-tools mr-2"></i>Tools</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Linux</li>
+                        <li>Jupyter</li>
+                        <li>Spyder</li>
+                        <li>Google Colab</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+                <!-- Certifications & Achievements -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-4 text-indigo-700"><i class="fas fa-award mr-2"></i>Certifications & Achievements</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>NPTEL Certification: Algorithmic Game Theory (71%)</li>
+                        <li>Participated in Smart India Hackathon (SIH) 2024</li>
+                        <li>Core Member of NSO Team at SNUC</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white rounded-lg shadow-lg mx-4 md:mx-auto mt-12 mb-12">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Project 1: Online Examination and Grading Management System -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-3xl font-bold mb-4 text-indigo-700">Online Examination and Grading Management System</h3>
+                    <p class="text-gray-600 mb-4">
+                        Developing an online examination platform to streamline exam conduction and grading. Implementing automated grading and real-time result processing using SQL. Designing a secure authentication system and an intuitive user interface.
+                    </p>
+                    <p class="text-sm text-gray-500 mb-4">
+                        <span class="font-semibold">Technologies:</span> DBMS, SQL, Web Technologies
+                    </p>
+                    <a href="https://github.com/gitanushnahub" target="_blank" class="btn-primary text-sm">
+                        <i class="fab fa-github mr-2"></i>View on GitHub
+                    </a>
+                </div>
+
+                <!-- Project 2: Plagiarism Checker for Text Data -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-3xl font-bold mb-4 text-indigo-700">Plagiarism Checker for Text Data</h3>
+                    <p class="text-gray-600 mb-4">
+                        Developing a plagiarism detection system using efficient text-matching algorithms. Implementing string similarity, fingerprinting, and hashing to improve detection accuracy. Ensuring robust performance without relying on ML models or LLMs.
+                    </p>
+                    <p class="text-sm text-gray-500 mb-4">
+                        <span class="font-semibold">Technologies:</span> Data Mining, Text Processing, Algorithms
+                    </p>
+                    <a href="https://github.com/gitanushnahub" target="_blank" class="btn-primary text-sm">
+                        <i class="fab fa-github mr-2"></i>View on GitHub
+                    </a>
+                </div>
+
+                <!-- Project 3: To-Do List Application (C++) -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-3xl font-bold mb-4 text-indigo-700">To-Do List Application (C++)</h3>
+                    <p class="text-gray-600 mb-4">
+                        Developed a CLI-based task management system with user authentication. Implemented file handling for storing and retrieving tasks persistently. Designed an interactive console UI with menu-driven functionality.
+                    </p>
+                    <p class="text-sm text-gray-500 mb-4">
+                        <span class="font-semibold">Technologies:</span> C++, File Handling, Console UI
+                    </p>
+                    <a href="https://github.com/gitanushnahub" target="_blank" class="btn-primary text-sm">
+    <i class="fab fa-github mr-2"></i>View on GitHub
+</a>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50 rounded-lg shadow-lg mx-4 md:mx-auto mt-12 mb-12">
+        <div class="container text-center">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="text-lg text-gray-700 mb-8">
+                I'm always open to new opportunities and collaborations. Feel free to reach out!
+            </p>
+            <div class="flex flex-col items-center space-y-4 text-gray-800 text-lg">
+                <p><i class="fas fa-envelope text-indigo-600 mr-3"></i> immadisettyanushna@gmail.com</p>
+                <p><i class="fas fa-phone text-indigo-600 mr-3"></i> +91 9618193235</p>
+                <div class="flex space-x-6 mt-4">
+    <!-- GitHub Profile 1 -->
+    <a href="https://github.com/immadisetty-anushna" target="_blank" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300 text-3xl" title="GitHub - Personal">
+        <i class="fab fa-github"></i>
+    </a>
+    
+    <!-- GitHub Profile 2 -->
+    <a href="https://github.com/gitanushnahub" target="_blank" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300 text-3xl" title="GitHub - Project Hub">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/immadisetty-anushna-6a4388341" target="_blank" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300 text-3xl" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+    </a>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center rounded-t-3xl shadow-inner">
+        <div class="container">
+            <p>&copy; 2025 Anushna Immadisetty. All rights reserved.</p>
+            <p class="text-sm mt-2">Designed with <i class="fas fa-heart text-red-500 mx-1"></i> by Anushna</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu after clicking a link
+                if (window.innerWidth < 768) {
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Toggle mobile menu visibility
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
