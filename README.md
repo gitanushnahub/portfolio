@@ -23,7 +23,7 @@ This is my personal portfolio website built using **HTML**, **Tailwind CSS**, an
 
 ## 🚀 Live Link
 
-👉 [Your Portfolio Link Here](#)  
+👉 [Your Portfolio Link Here](https://gitanushnahub.github.io/portfolio/)  
 (Replace `#` after hosting it on GitHub Pages)
 
 ## 🧾 How to Use
